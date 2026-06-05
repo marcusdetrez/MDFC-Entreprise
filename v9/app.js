@@ -206,7 +206,7 @@ function renderHome(app){
       </div>
     </div>
     <div class="hero-right">
-      <img class="hero-photo" src="../ChatGPT%20Image%20May%2020%2C%202026%2C%2007_40_15%20AM.png" alt="Marcus Detrez" onerror="this.style.display='none'">
+      <img class="hero-photo" src="assets/portrait.png" alt="Marcus Detrez" onerror="this.style.display='none'">
       <div class="hero-accent">MD</div>
     </div>
   </section>
@@ -347,14 +347,14 @@ function renderHome(app){
         <p data-en>I deliver courses and training at these French higher education institutions.</p>
       </div>
       <div class="schools-grid">
-        <div class="school-card"><div class="sc-logo-wrap"><img class="sc-logo" src="../logo%20des%20partenaires/22.png" alt="EM Normandie"></div><div><div class="sc-name">EM NORMANDIE</div><div class="sc-type" data-fr>École de management</div><div class="sc-type" data-en>Business school</div></div></div>
-        <div class="school-card"><div class="sc-logo-wrap"><img class="sc-logo" src="../logo%20des%20partenaires/albert-school-1680613084.png" alt="Albert School"></div><div><div class="sc-name">ALBERT SCHOOL</div><div class="sc-type" data-fr>École de commerce</div><div class="sc-type" data-en>Business school</div></div></div>
-        <div class="school-card"><div class="sc-logo-wrap"><img class="sc-logo" src="../logo%20des%20partenaires/18.png" alt="Mines Paris PSL"></div><div><div class="sc-name">MINES PARIS PSL</div><div class="sc-type" data-fr>Grande école</div><div class="sc-type" data-en>Engineering grande école</div></div></div>
-        <div class="school-card" style="border-right:none"><div class="sc-logo-wrap"><img class="sc-logo" src="../logo%20des%20partenaires/19.png" alt="CESI"></div><div><div class="sc-name">CESI</div><div class="sc-type" data-fr>École d'ingénieurs</div><div class="sc-type" data-en>Engineering school</div></div></div>
-        <div class="school-card" style="border-bottom:none"><div class="sc-logo-wrap"><img class="sc-logo" src="../logo%20des%20partenaires/20.png" alt="ESAIP"></div><div><div class="sc-name">ESAIP</div><div class="sc-type" data-fr>École d'ingénieurs La Salle</div><div class="sc-type" data-en>Engineering school</div></div></div>
-        <div class="school-card" style="border-bottom:none"><div class="sc-logo-wrap"><img class="sc-logo" src="../logo%20des%20partenaires/21.png" alt="Euridis"></div><div><div class="sc-name">EURIDIS</div><div class="sc-type">Business School</div></div></div>
-        <div class="school-card" style="border-bottom:none"><div class="sc-logo-wrap"><img class="sc-logo" src="../logo%20des%20partenaires/39.png" alt="LSI"></div><div><div class="sc-name">LSI</div><div class="sc-type">Learny Society Intl</div></div></div>
-        <div class="school-card" style="border-right:none;border-bottom:none"><div class="sc-logo-wrap"><img class="sc-logo" src="../logo%20des%20partenaires/23.png" alt="Aix-Marseille"></div><div><div class="sc-name">AIX-MARSEILLE</div><div class="sc-type" data-fr>Université</div><div class="sc-type" data-en>University</div></div></div>
+        <div class="school-card"><div class="sc-logo-wrap"><img class="sc-logo" src="assets/logos/22.png" alt="EM Normandie"></div><div><div class="sc-name">EM NORMANDIE</div><div class="sc-type" data-fr>École de management</div><div class="sc-type" data-en>Business school</div></div></div>
+        <div class="school-card"><div class="sc-logo-wrap"><img class="sc-logo" src="assets/logos/albert-school-1680613084.png" alt="Albert School"></div><div><div class="sc-name">ALBERT SCHOOL</div><div class="sc-type" data-fr>École de commerce</div><div class="sc-type" data-en>Business school</div></div></div>
+        <div class="school-card"><div class="sc-logo-wrap"><img class="sc-logo" src="assets/logos/18.png" alt="Mines Paris PSL"></div><div><div class="sc-name">MINES PARIS PSL</div><div class="sc-type" data-fr>Grande école</div><div class="sc-type" data-en>Engineering grande école</div></div></div>
+        <div class="school-card" style="border-right:none"><div class="sc-logo-wrap"><img class="sc-logo" src="assets/logos/19.png" alt="CESI"></div><div><div class="sc-name">CESI</div><div class="sc-type" data-fr>École d'ingénieurs</div><div class="sc-type" data-en>Engineering school</div></div></div>
+        <div class="school-card" style="border-bottom:none"><div class="sc-logo-wrap"><img class="sc-logo" src="assets/logos/20.png" alt="ESAIP"></div><div><div class="sc-name">ESAIP</div><div class="sc-type" data-fr>École d'ingénieurs La Salle</div><div class="sc-type" data-en>Engineering school</div></div></div>
+        <div class="school-card" style="border-bottom:none"><div class="sc-logo-wrap"><img class="sc-logo" src="assets/logos/21.png" alt="Euridis"></div><div><div class="sc-name">EURIDIS</div><div class="sc-type">Business School</div></div></div>
+        <div class="school-card" style="border-bottom:none"><div class="sc-logo-wrap"><img class="sc-logo" src="assets/logos/39.png" alt="LSI"></div><div><div class="sc-name">LSI</div><div class="sc-type">Learny Society Intl</div></div></div>
+        <div class="school-card" style="border-right:none;border-bottom:none"><div class="sc-logo-wrap"><img class="sc-logo" src="assets/logos/23.png" alt="Aix-Marseille"></div><div><div class="sc-name">AIX-MARSEILLE</div><div class="sc-type" data-fr>Université</div><div class="sc-type" data-en>University</div></div></div>
       </div>
     </div>
   </section>

@@ -1,7 +1,5 @@
 {
-  "rootDirectory": "v9",
   "framework": null,
   "buildCommand": null,
-  "installCommand": null,
-  "outputDirectory": "."
+  "installCommand": null
 }

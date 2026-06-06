@@ -5,36 +5,46 @@
 
 /* ——— BLOG PHOTOS ——— */
 const BLOG_PHOTOS = {
-  'reunions-anglais-erreurs-francophones':              'https://picsum.photos/seed/meeting-en/1400/480',
-  'toeic-strategie-score-800':                          'https://picsum.photos/seed/toeic-exam/1400/480',
-  'negociation-anglais-face-natif':                     'https://picsum.photos/seed/negociation-en/1400/480',
-  'prise-de-parole-public-structure-francais':          'https://picsum.photos/seed/prise-parole-fr/1400/480',
-  'francais-affaires-formules-cles':                    'https://picsum.photos/seed/francais-biz/1400/480',
-  'fle-entreprise-former-non-natifs':                   'https://picsum.photos/seed/fle-formation/1400/480',
-  'suedois-professionnel-investissement-linguistique':  'https://picsum.photos/seed/stockholm-biz/1400/480',
-  'culture-affaires-suedoise-codes':                    'https://picsum.photos/seed/swedish-culture/1400/480',
-  'suedois-vs-norvegien-affaires-choix':                'https://picsum.photos/seed/nordic-choice/1400/480',
-  'norvegien-affaires-secteur-maritime':                'https://picsum.photos/seed/maritime-norway/1400/480',
-  'norvegien-bokmal-nynorsk-lequel-choisir':            'https://picsum.photos/seed/bokmal-nynorsk/1400/480',
-  'norvege-suede-differences-culturelles-affaires':     'https://picsum.photos/seed/nordic-diff/1400/480',
-  'caracteres-chinois-logique-apprentissage':           'https://picsum.photos/seed/chinese-chars/1400/480',
-  'hsk4-six-mois-methode':                              'https://picsum.photos/seed/hsk4-methode/1400/480',
-  'business-chine-codes-culturels':                     'https://picsum.photos/seed/china-business/1400/480',
-  'management-interculturel-erreurs-managers-francais': 'https://picsum.photos/seed/intercult-mgmt/1400/480',
-  'intelligence-culturelle-dirigeants-internationaux':  'https://picsum.photos/seed/cultural-intel/1400/480',
-  'expansion-internationale-erreurs-culturelles':       'https://picsum.photos/seed/expansion-intl/1400/480',
-  'ia-entreprise-ce-qui-change-vraiment':               'https://picsum.photos/seed/ai-entreprise/1400/480',
-  'prompt-engineering-non-techniciens-guide':           'https://picsum.photos/seed/prompt-eng/1400/480',
-  'transformation-digitale-pourquoi-echec':             'https://picsum.photos/seed/digital-trans/1400/480',
-  'prise-de-parole-secrets-meilleurs-orateurs':         'https://picsum.photos/seed/orateurs-pub/1400/480',
-  'communication-crise-dix-premieres-heures':           'https://picsum.photos/seed/comm-crise/1400/480',
-  'techniques-vente-consultative-b2b':                  'https://picsum.photos/seed/vente-b2b/1400/480',
-  'veille-strategique-systeme-30-minutes':              'https://picsum.photos/seed/veille-strat/1400/480',
-  'guerre-economique-mecanismes-grandes-puissances':    'https://picsum.photos/seed/guerre-eco/1400/480',
-  'analyse-concurrentielle-methode-48h':                'https://picsum.photos/seed/analyse-conc/1400/480',
-  'strategie-langues-entreprise-enjeu-strategique':     'https://picsum.photos/seed/strategie-lang/1400/480',
-  'personal-branding-dirigeants-reputation-strategique':'https://picsum.photos/seed/personal-brand/1400/480',
-  'ingenierie-pedagogique-formation-resultats':         'https://picsum.photos/seed/ingenierie-ped/1400/480',
+  /* ANGLAIS */
+  'reunions-anglais-erreurs-francophones':              'https://images.unsplash.com/photo-1560472354-b33ff0c44a43?w=1400&h=480&fit=crop&auto=format&q=80',
+  'toeic-strategie-score-800':                          'https://images.unsplash.com/photo-1434030216411-0b5bd7fe9571?w=1400&h=480&fit=crop&auto=format&q=80',
+  'negociation-anglais-face-natif':                     'https://images.unsplash.com/photo-1521791136064-7986c2920216?w=1400&h=480&fit=crop&auto=format&q=80',
+  /* FRANÇAIS */
+  'prise-de-parole-public-structure-francais':          'https://images.unsplash.com/photo-1475721027785-f74eccf877e2?w=1400&h=480&fit=crop&auto=format&q=80',
+  'francais-affaires-formules-cles':                    'https://images.unsplash.com/photo-1499750310107-5fef28a66643?w=1400&h=480&fit=crop&auto=format&q=80',
+  'fle-entreprise-former-non-natifs':                   'https://images.unsplash.com/photo-1524178232363-1fb2b075b655?w=1400&h=480&fit=crop&auto=format&q=80',
+  /* SUÉDOIS */
+  'suedois-professionnel-investissement-linguistique':  'https://images.unsplash.com/photo-1509356843151-3e7d96241e11?w=1400&h=480&fit=crop&auto=format&q=80',
+  'culture-affaires-suedoise-codes':                    'https://images.unsplash.com/photo-1488972685169-b0da9fc0efca?w=1400&h=480&fit=crop&auto=format&q=80',
+  'suedois-vs-norvegien-affaires-choix':                'https://images.unsplash.com/photo-1531366936337-7c912a4589a7?w=1400&h=480&fit=crop&auto=format&q=80',
+  /* NORVÉGIEN */
+  'norvegien-affaires-secteur-maritime':                'https://images.unsplash.com/photo-1505118380757-91f5f5632de0?w=1400&h=480&fit=crop&auto=format&q=80',
+  'norvegien-bokmal-nynorsk-lequel-choisir':            'https://images.unsplash.com/photo-1456513080510-7bf3a84b82f8?w=1400&h=480&fit=crop&auto=format&q=80',
+  'norvege-suede-differences-culturelles-affaires':     'https://images.unsplash.com/photo-1519681393784-d120267933ba?w=1400&h=480&fit=crop&auto=format&q=80',
+  /* MANDARIN */
+  'caracteres-chinois-logique-apprentissage':           'https://images.unsplash.com/photo-1547981729-2c90dbba89cc?w=1400&h=480&fit=crop&auto=format&q=80',
+  'hsk4-six-mois-methode':                              'https://images.unsplash.com/photo-1526978101819-b2d3b58c5b80?w=1400&h=480&fit=crop&auto=format&q=80',
+  /* INTERCULTUREL */
+  'business-chine-codes-culturels':                     'https://images.unsplash.com/photo-1508804185872-173bbde0322a?w=1400&h=480&fit=crop&auto=format&q=80',
+  'management-interculturel-erreurs-managers-francais': 'https://images.unsplash.com/photo-1522071820081-009f0129c71c?w=1400&h=480&fit=crop&auto=format&q=80',
+  'intelligence-culturelle-dirigeants-internationaux':  'https://images.unsplash.com/photo-1521737604082-b45e0f3ea98c?w=1400&h=480&fit=crop&auto=format&q=80',
+  'expansion-internationale-erreurs-culturelles':       'https://images.unsplash.com/photo-1526304640581-d334cdbbf45e?w=1400&h=480&fit=crop&auto=format&q=80',
+  /* IA */
+  'ia-entreprise-ce-qui-change-vraiment':               'https://images.unsplash.com/photo-1620712943543-bcc4688e7485?w=1400&h=480&fit=crop&auto=format&q=80',
+  'prompt-engineering-non-techniciens-guide':           'https://images.unsplash.com/photo-1555949963-ff9fe0c870cb?w=1400&h=480&fit=crop&auto=format&q=80',
+  'transformation-digitale-pourquoi-echec':             'https://images.unsplash.com/photo-1451187580459-43490279c0fa?w=1400&h=480&fit=crop&auto=format&q=80',
+  /* COMMUNICATION */
+  'prise-de-parole-secrets-meilleurs-orateurs':         'https://images.unsplash.com/photo-1540575467537-af730f0a22ef?w=1400&h=480&fit=crop&auto=format&q=80',
+  'communication-crise-dix-premieres-heures':           'https://images.unsplash.com/photo-1585829365295-ab7a4443bf20?w=1400&h=480&fit=crop&auto=format&q=80',
+  'techniques-vente-consultative-b2b':                  'https://images.unsplash.com/photo-1600880292203-757bb62b4baf?w=1400&h=480&fit=crop&auto=format&q=80',
+  /* VEILLE */
+  'veille-strategique-systeme-30-minutes':              'https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=1400&h=480&fit=crop&auto=format&q=80',
+  'guerre-economique-mecanismes-grandes-puissances':    'https://images.unsplash.com/photo-1611974789855-9c2a0a7236a3?w=1400&h=480&fit=crop&auto=format&q=80',
+  'analyse-concurrentielle-methode-48h':                'https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=1400&h=480&fit=crop&auto=format&q=80',
+  /* VISION */
+  'strategie-langues-entreprise-enjeu-strategique':     'https://images.unsplash.com/photo-1516321318423-f06f85e504b3?w=1400&h=480&fit=crop&auto=format&q=80',
+  'personal-branding-dirigeants-reputation-strategique':'https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=1400&h=480&fit=crop&auto=format&q=80',
+  'ingenierie-pedagogique-formation-resultats':         'https://images.unsplash.com/photo-1503676260728-1c00da094a0b?w=1400&h=480&fit=crop&auto=format&q=80',
 };
 
 /* ——— LANG ——— */

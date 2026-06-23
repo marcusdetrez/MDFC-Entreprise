@@ -64,7 +64,7 @@ p{color:var(--ink2);line-height:1.75}
 .nav-cta{background:var(--red)!important;color:var(--ink)!important;padding:.4rem 1.2rem;font-size:.75rem!important;font-weight:600!important;letter-spacing:.1em!important;text-transform:uppercase!important;border-radius:2px}
 .nav-cta:hover{opacity:.85!important}
 .lang-switch{display:flex;border:1px solid var(--border);border-radius:2px;overflow:hidden}
-.lang-switch button{padding:.28rem .65rem;font-family:var(--body);font-size:.72rem;font-weight:600;letter-spacing:.08em;text-transform:uppercase;background:transparent;color:var(--ink3);border:none;cursor:pointer;transition:all .2s}
+.lang-switch button{padding:.28rem .48rem;font-family:var(--body);font-size:.68rem;font-weight:600;letter-spacing:.06em;text-transform:uppercase;background:transparent;color:var(--ink3);border:none;cursor:pointer;transition:all .2s}
 .lang-switch button.active{background:var(--ink);color:var(--bg)}
 
 /* ——— LAYOUT ——— */
@@ -419,8 +419,30 @@ blockquote.pull-quote{border-left:3px solid var(--red);padding:1.25rem 2rem;marg
 .hub-header p{max-width:600px;margin-top:.75rem}
 
 /* ——— LANG TOGGLE ——— */
-body.en [data-fr]{display:none}
 body.fr [data-en]{display:none}
+body.fr [data-zh]{display:none}
+body.fr [data-no]{display:none}
+body.fr [data-sv]{display:none}
+
+body.en [data-fr]{display:none}
+body.en [data-zh]{display:none}
+body.en [data-no]{display:none}
+body.en [data-sv]{display:none}
+
+body.zh [data-fr]{display:none}
+body.zh [data-en]{display:none}
+body.zh [data-no]{display:none}
+body.zh [data-sv]{display:none}
+
+body.no [data-fr]{display:none}
+body.no [data-en]{display:none}
+body.no [data-zh]{display:none}
+body.no [data-sv]{display:none}
+
+body.sv [data-fr]{display:none}
+body.sv [data-en]{display:none}
+body.sv [data-zh]{display:none}
+body.sv [data-no]{display:none}
 .ct-hidden{display:none}
 .ct-active{display:grid}
 

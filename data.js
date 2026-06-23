@@ -6,18 +6,21 @@
 const FORMATIONS = {
   langues: {
     slug: 'langues',
-    label_fr: 'Langues étrangères', label_en: 'Foreign Languages',
+    label_fr: 'Langues étrangères', label_en: 'Foreign Languages', label_zh: '外语培训', label_no: 'Fremmedspråkopplæring', label_sv: 'Fremmedspråksutbildning',
     icon: '語',
     desc_fr: 'Anglais, Français, Suédois, Norvégien, Mandarin — formations professionnelles certifiantes et sur-mesure pour vos équipes et vos projets.',
     desc_en: 'English, French, Swedish, Norwegian, Mandarin — professional certified language training for your teams.',
+    desc_zh: '英语、法语、瑞典语、挪威语、普通话——为您的团队和项目提供专业认证语言培训。',
+    desc_no: 'Engelsk, Fransk, Svensk, Norsk, Mandarin — profesjonell sertifiserende språkopplæring for dine team og prosjekter.',
+    desc_sv: 'Engelska, Franska, Svenska, Norska, Mandarin — professionell certifierande språkutbildning för dina team och projekt.',
     sous_services: {
       anglais: {
         slug: 'anglais',
-        label_fr: 'Anglais professionnel', label_en: 'Professional English',
+        label_fr: 'Anglais professionnel', label_en: 'Professional English', label_zh: '职业英语', label_no: 'Profesjonell Engelsk', label_sv: 'Professionell Engelska',
         modules: [
           {
             slug: 'meetings',
-            label_fr: 'Meetings & réunions en anglais', label_en: 'Meetings in English',
+            label_fr: 'Meetings & réunions en anglais', label_en: 'Meetings in English', label_zh: '商务会议英语', label_no: 'Møter på engelsk', label_sv: 'Möten på engelska',
             pitch_fr: 'Vous maîtrisez l\'anglais. Mais en réunion internationale, quelque chose coince — le rythme, les interventions, la précision. Cette formation règle ça. En 1 à 2 jours, vos équipes savent prendre la parole, structurer une intervention, gérer les désaccords et sortir d\'une réunion avec des décisions claires.',
             programme_fr: [
               'Structures de réunion en anglais (agenda, opening, chairing, closing)',
@@ -38,7 +41,7 @@ const FORMATIONS = {
           },
           {
             slug: 'business',
-            label_fr: 'Business English', label_en: 'Business English',
+            label_fr: 'Business English', label_en: 'Business English', label_zh: '商务英语', label_no: 'Business English', label_sv: 'Business English',
             pitch_fr: 'Le Business English ne s\'apprend pas dans un manuel. Il se maîtrise en situation. Emails, négociations, présentations, calls — cette formation couvre l\'intégralité du spectre de communication professionnelle en anglais, de A2 à C1.',
             programme_fr: [
               'Communication écrite : emails, rapports, synthèses',
@@ -59,7 +62,7 @@ const FORMATIONS = {
           },
           {
             slug: 'toeic',
-            label_fr: 'TOEIC / TOEFL / Linguaskills', label_en: 'TOEIC / TOEFL / Linguaskills',
+            label_fr: 'TOEIC / TOEFL / Linguaskills', label_en: 'TOEIC / TOEFL / Linguaskills', label_zh: 'TOEIC / TOEFL / Linguaskills', label_no: 'TOEIC / TOEFL / Linguaskills', label_sv: 'TOEIC / TOEFL / Linguaskills',
             pitch_fr: 'Certification en vue. Délai serré. Pas de temps à perdre. Cette préparation est calibrée pour maximiser votre score en un minimum de sessions — pas pour vous faire réviser pendant 6 mois ce que vous savez déjà.',
             programme_fr: [
               'Audit de niveau et diagnostic des points faibles',
@@ -80,7 +83,7 @@ const FORMATIONS = {
           },
           {
             slug: 'sales',
-            label_fr: 'Sales English', label_en: 'Sales English',
+            label_fr: 'Sales English', label_en: 'Sales English', label_zh: '销售英语', label_no: 'Salg på engelsk', label_sv: 'Sälj på engelska',
             pitch_fr: 'Vendre en anglais, c\'est autre chose que parler anglais. Prospecter, convaincre, closer, gérer les objections, relancer — tout ça dans une langue étrangère face à des acheteurs natifs ou internationaux. Cette formation donne les outils pour ne plus subir la négociation en anglais.',
             programme_fr: [
               'Vocabulaire et structures de la vente en anglais',
@@ -100,7 +103,7 @@ const FORMATIONS = {
           },
           {
             slug: 'public-speaking',
-            label_fr: 'Public speaking en anglais', label_en: 'Public Speaking in English',
+            label_fr: 'Public speaking en anglais', label_en: 'Public Speaking in English', label_zh: '英语公开演讲', label_no: 'Public speaking på engelsk', label_sv: 'Public speaking på engelska',
             pitch_fr: 'Prendre la parole en anglais devant un public international est un exercice à part entière. Pas juste de l\'anglais — de la présence, de la structure, de l\'impact. Cette formation transforme un locuteur hésitant en orateur qui commande l\'attention.',
             programme_fr: [
               'Structure d\'une intervention en anglais (opening, body, closing)',
@@ -121,7 +124,7 @@ const FORMATIONS = {
           },
           {
             slug: 'negociation',
-            label_fr: 'Negotiation techniques in English', label_en: 'Negotiation in English',
+            label_fr: 'Negotiation techniques in English', label_en: 'Negotiation in English', label_zh: '英语谈判技巧', label_no: 'Forhandlingsteknikker på engelsk', label_sv: 'Förhandlingstekniker på engelska',
             pitch_fr: 'La négociation en anglais a ses propres codes — indirection britannique, directness américaine, styles nordiques, asiatiques. Cette formation arme vos équipes pour négocier efficacement en anglais quel que soit l\'interlocuteur.',
             programme_fr: [
               'Styles de négociation anglophones (UK, US, Australie, Inde…)',
@@ -143,11 +146,11 @@ const FORMATIONS = {
       },
       francais: {
         slug: 'francais',
-        label_fr: 'Français professionnel', label_en: 'Professional French',
+        label_fr: 'Français professionnel', label_en: 'Professional French', label_zh: '职业法语', label_no: 'Profesjonell Fransk', label_sv: 'Professionell Franska',
         modules: [
           {
             slug: 'prise-de-parole',
-            label_fr: 'Prise de parole en public', label_en: 'Public Speaking',
+            label_fr: 'Prise de parole en public', label_en: 'Public Speaking', label_zh: '法语公开演讲', label_no: 'Offentlig tale på fransk', label_sv: 'Offentligt tal på franska',
             pitch_fr: 'Le français est une langue de précision et de rhétorique. Savoir s\'en servir en public — en réunion, en conférence, face à un client ou un jury — est une compétence qui se travaille. Cette formation donne les outils pour parler avec autorité et clarté.',
             programme_fr: [
               'Structure d\'une intervention en français',
@@ -167,7 +170,7 @@ const FORMATIONS = {
           },
           {
             slug: 'remise-a-niveau',
-            label_fr: 'Remise à niveau professionnel', label_en: 'French Proficiency Reset',
+            label_fr: 'Remise à niveau professionnel', label_en: 'French Proficiency Reset', label_zh: '法语水平提升', label_no: 'Oppdatering i Fransk', label_sv: 'Franska Nivåuppdatering',
             pitch_fr: 'Pour les non-natifs en contexte professionnel français, ou pour les natifs dont l\'écrit professionnel laisse à désirer. Pas de honte — c\'est une compétence comme une autre. On repart des bases et on monte vite.',
             programme_fr: [
               'Diagnostic de niveau et identification des lacunes prioritaires',
@@ -188,11 +191,11 @@ const FORMATIONS = {
       },
       suedois: {
         slug: 'suedois',
-        label_fr: 'Suédois professionnel', label_en: 'Professional Swedish',
+        label_fr: 'Suédois professionnel', label_en: 'Professional Swedish', label_zh: '职业瑞典语', label_no: 'Profesjonell Svensk', label_sv: 'Professionell Svenska',
         modules: [
           {
             slug: 'business',
-            label_fr: 'Business Swedish', label_en: 'Business Swedish',
+            label_fr: 'Business Swedish', label_en: 'Business Swedish', label_zh: '商务瑞典语', label_no: 'Business Swedish', label_sv: 'Business Swedish',
             pitch_fr: 'Le suédois des affaires a ses codes — formules, registres, culture de la réunion scandinave (consensus, égalité, sobriété). Certifié Pipplet C2, j\'enseigne le suédois professionnel comme peu d\'autres formateurs en France peuvent le faire.',
             programme_fr: [
               'Vocabulaire professionnel suédois par secteur',
@@ -212,7 +215,7 @@ const FORMATIONS = {
           },
           {
             slug: 'colloquial',
-            label_fr: 'Colloquial Swedish', label_en: 'Colloquial Swedish',
+            label_fr: 'Colloquial Swedish', label_en: 'Colloquial Swedish', label_zh: '瑞典口语', label_no: 'Colloquial Swedish', label_sv: 'Colloquial Swedish',
             pitch_fr: 'Le suédois courant — celui qu\'on parle vraiment en Suède, avec ses raccourcis, ses expressions, son rythme. Pour ceux qui veulent dépasser le suédois de manuel.',
             programme_fr: [
               'Expressions idiomatiques et langage courant',
@@ -227,7 +230,7 @@ const FORMATIONS = {
           },
           {
             slug: 'institutional',
-            label_fr: 'Institutional Swedish', label_en: 'Institutional Swedish',
+            label_fr: 'Institutional Swedish', label_en: 'Institutional Swedish', label_zh: '机构瑞典语', label_no: 'Institutional Swedish', label_sv: 'Institutional Swedish',
             pitch_fr: 'Le suédois institutionnel — administration, juridique, politique, diplomatique. Pour ceux qui travaillent avec des institutions suédoises ou nordiques.',
             programme_fr: [
               'Vocabulaire institutionnel et administratif suédois',
@@ -244,11 +247,11 @@ const FORMATIONS = {
       },
       norvegien: {
         slug: 'norvegien',
-        label_fr: 'Norvégien professionnel', label_en: 'Professional Norwegian',
+        label_fr: 'Norvégien professionnel', label_en: 'Professional Norwegian', label_zh: '职业挪威语', label_no: 'Profesjonell Norsk', label_sv: 'Professionell Norska',
         modules: [
           {
             slug: 'business',
-            label_fr: 'Business Norwegian', label_en: 'Business Norwegian',
+            label_fr: 'Business Norwegian', label_en: 'Business Norwegian', label_zh: '商务挪威语', label_no: 'Business Norsk', label_sv: 'Business Norska',
             pitch_fr: 'Le norvégien des affaires — secteurs maritime, offshore, pêche, énergie. Une langue rare, un marché sous-exploité, un avantage compétitif réel pour les entreprises françaises qui l\'osent.',
             programme_fr: [
               'Vocabulaire professionnel norvégien par secteur',
@@ -263,7 +266,7 @@ const FORMATIONS = {
           },
           {
             slug: 'colloquial',
-            label_fr: 'Colloquial Norwegian', label_en: 'Colloquial Norwegian',
+            label_fr: 'Colloquial Norwegian', label_en: 'Colloquial Norwegian', label_zh: '挪威口语', label_no: 'Colloquial Norsk', label_sv: 'Colloquial Norska',
             pitch_fr: 'Le norvégien parlé, vivant. Expressions, humour, registres familiaux — pour ceux qui veulent fonctionner naturellement avec des Norvégiens.',
             programme_fr: [
               'Expressions idiomatiques norvégiennes',
@@ -278,7 +281,7 @@ const FORMATIONS = {
           },
           {
             slug: 'institutional',
-            label_fr: 'Institutional Norwegian', label_en: 'Institutional Norwegian',
+            label_fr: 'Institutional Norwegian', label_en: 'Institutional Norwegian', label_zh: '机构挪威语', label_no: 'Institutional Norsk', label_sv: 'Institutional Norska',
             pitch_fr: 'Le norvégien administratif et institutionnel — pour les professionnels qui travaillent avec des administrations, collectivités ou institutions norvégiennes.',
             programme_fr: [
               'Vocabulaire administratif et institutionnel norvégien',
@@ -295,11 +298,11 @@ const FORMATIONS = {
       },
       mandarin: {
         slug: 'mandarin',
-        label_fr: 'Chinois mandarin', label_en: 'Mandarin Chinese',
+        label_fr: 'Chinois mandarin', label_en: 'Mandarin Chinese', label_zh: '汉语普通话', label_no: 'Mandarin kinesisk', label_sv: 'Mandarin kinesiska',
         modules: [
           {
             slug: 'logique',
-            label_fr: 'La logique de la langue chinoise', label_en: 'The Logic of Chinese',
+            label_fr: 'La logique de la langue chinoise', label_en: 'The Logic of Chinese', label_zh: '汉语逻辑入门', label_no: 'Logikken i kinesisk', label_sv: 'Kinesiskans logik',
             pitch_fr: 'Le mandarin n\'est pas difficile — il est différent. Pas de conjugaison, pas de déclinaison, pas d\'alphabet phonétique latin. Mais une logique interne d\'une cohérence redoutable. Cette formation donne les clés de compréhension de la structure du mandarin pour partir sur des bases solides.',
             programme_fr: [
               'Système tonal — les 4 tons + ton neutre',
@@ -320,7 +323,7 @@ const FORMATIONS = {
           },
           {
             slug: 'ecriture',
-            label_fr: 'Écrire en chinois', label_en: 'Writing in Chinese',
+            label_fr: 'Écrire en chinois', label_en: 'Writing in Chinese', label_zh: '汉字书写', label_no: 'Å skrive kinesisk', label_sv: 'Skriva kinesiska',
             pitch_fr: 'Les caractères chinois effrayent. À tort. Ils ont une logique, une histoire, une structure. Cette formation initie à l\'écriture des caractères les plus courants et donne les outils pour continuer seul.',
             programme_fr: [
               'Ordre des traits — règles fondamentales',
@@ -345,18 +348,21 @@ const FORMATIONS = {
 
   interculturel: {
     slug: 'interculturel',
-    label_fr: 'Interculturalité', label_en: 'Interculturality',
+    label_fr: 'Interculturalité', label_en: 'Interculturality', label_zh: '跨文化交际', label_no: 'Interkulturalitet', label_sv: 'Interkulturalitet',
     icon: '⊕',
     desc_fr: 'Négociation cross-culturelle, management multiculturel, expansion internationale — les outils pour fonctionner dans la diversité.',
     desc_en: 'Cross-cultural negotiation, multicultural management, international expansion.',
+    desc_zh: '跨文化谈判、多元文化管理、国际扩张——在多样性中有效运作的工具。',
+    desc_no: 'Tverrkulturelle forhandlinger, multikulturell ledelse, internasjonal ekspansjon — verktøy for å fungere i mangfold.',
+    desc_sv: 'Tvärkulturella förhandlingar, mångkulturell ledning, internationell expansion — verktyg för att fungera i mångfald.',
     sous_services: {
       core: {
         slug: 'core',
-        label_fr: 'Formations interculturelles', label_en: 'Intercultural Training',
+        label_fr: 'Formations interculturelles', label_en: 'Intercultural Training', label_zh: '跨文化培训', label_no: 'Interkulturell opplæring', label_sv: 'Interkulturell utbildning',
         modules: [
           {
             slug: 'negociation-cross',
-            label_fr: 'Négociation cross-culturelle en contexte business', label_en: 'Cross-Cultural Business Negotiation',
+            label_fr: 'Négociation cross-culturelle en contexte business', label_en: 'Cross-Cultural Business Negotiation', label_zh: '跨文化商务谈判', label_no: 'Tverrkulturell forretningsforhandling', label_sv: 'Tvärkulturella affärsförhandlingar',
             pitch_fr: 'Vous négociez avec des Chinois, des Nordiques, des Anglo-Saxons, des Africains. Chacun a ses codes, ses silences, ses façons de dire non sans le dire. Cette formation décode les styles de négociation des principales cultures d\'affaires mondiales.',
             programme_fr: [
               'Modèles de communication cross-culturelle (haute et basse contextualité)',
@@ -377,7 +383,7 @@ const FORMATIONS = {
           },
           {
             slug: 'management-multiculturel',
-            label_fr: 'Management d\'équipes multiculturelles', label_en: 'Multicultural Team Management',
+            label_fr: 'Management d\'équipes multiculturelles', label_en: 'Multicultural Team Management', label_zh: '多元文化团队管理', label_no: 'Ledelse av multikulturelle team', label_sv: 'Ledning av mångkulturella team',
             pitch_fr: 'Manager une équipe multiculturelle, c\'est manager plusieurs réalités en même temps. Rapport à l\'autorité, au temps, au conflit, à la hiérarchie — tout varie selon les cultures. Cette formation donne les outils pour aligner sans uniformiser.',
             programme_fr: [
               'Dimensions culturelles et leur impact sur le management',
@@ -397,7 +403,7 @@ const FORMATIONS = {
           },
           {
             slug: 'expansion-internationale',
-            label_fr: 'Préparer son expansion internationale', label_en: 'Preparing International Expansion',
+            label_fr: 'Préparer son expansion internationale', label_en: 'Preparing International Expansion', label_zh: '国际扩张准备', label_no: 'Forberedelse til internasjonal ekspansjon', label_sv: 'Förberedelse för internationell expansion',
             pitch_fr: 'Avant d\'entrer sur un marché étranger, il faut comprendre comment ce marché pense. Cette formation prépare les équipes dirigeantes à l\'entrée sur un nouveau marché — culturellement, linguistiquement, stratégiquement.',
             programme_fr: [
               'Analyse culturelle du marché cible',
@@ -422,18 +428,21 @@ const FORMATIONS = {
 
   ia: {
     slug: 'ia',
-    label_fr: 'IA & nouvelles technologies', label_en: 'AI & New Technologies',
+    label_fr: 'IA & nouvelles technologies', label_en: 'AI & New Technologies', label_zh: '人工智能与新技术', label_no: 'KI & Ny teknologi', label_sv: 'AI & Ny teknik',
     icon: '⌁',
     desc_fr: 'Transformation digitale, IA appliquée aux métiers, intégration des outils IA dans les équipes.',
     desc_en: 'Digital transformation, AI applied to professions, deploying AI tools in teams.',
+    desc_zh: '数字化转型、职业AI应用、团队AI工具集成。',
+    desc_no: 'Digital transformasjon, KI for fagfolk, integrering av KI-verktøy i team.',
+    desc_sv: 'Digital transformation, AI för yrkesverksamma, integration av AI-verktyg i team.',
     sous_services: {
       core: {
         slug: 'core',
-        label_fr: 'Formations IA & Digital', label_en: 'AI & Digital Training',
+        label_fr: 'Formations IA & Digital', label_en: 'AI & Digital Training', label_zh: 'AI与数字化培训', label_no: 'KI & Digital opplæring', label_sv: 'AI & Digital utbildning',
         modules: [
           {
             slug: 'transformation-digitale',
-            label_fr: 'Piloter sa transformation digitale', label_en: 'Leading Digital Transformation',
+            label_fr: 'Piloter sa transformation digitale', label_en: 'Leading Digital Transformation', label_zh: '领导数字化转型', label_no: 'Lede digital transformasjon', label_sv: 'Leda digital transformation',
             pitch_fr: 'La transformation digitale ne se pilote pas avec des outils — elle se pilote avec une vision et une méthode. Cette formation donne aux dirigeants et managers les cadres pour comprendre, décider et agir sur leur transformation numérique sans se perdre dans le jargon.',
             programme_fr: [
               'Cartographie des enjeux de la transformation digitale',
@@ -453,7 +462,7 @@ const FORMATIONS = {
           },
           {
             slug: 'ia-metiers',
-            label_fr: 'IA appliquée à son métier', label_en: 'AI Applied to Your Profession',
+            label_fr: 'IA appliquée à son métier', label_en: 'AI Applied to Your Profession', label_zh: '人工智能职业应用', label_no: 'KI i din profesjon', label_sv: 'AI i ditt yrke',
             pitch_fr: 'ChatGPT, Copilot, Midjourney — vous en avez entendu parler. Mais comment ça s\'applique concrètement à votre activité ? Cette formation part de vos cas d\'usage réels et montre comment l\'IA peut vous faire gagner du temps, de la précision et de la compétitivité.',
             programme_fr: [
               'Panorama des outils IA par cas d\'usage professionnel',
@@ -474,7 +483,7 @@ const FORMATIONS = {
           },
           {
             slug: 'outils-ia-equipes',
-            label_fr: 'Intégrer les outils IA dans ses équipes', label_en: 'Deploying AI Tools in Teams',
+            label_fr: 'Intégrer les outils IA dans ses équipes', label_en: 'Deploying AI Tools in Teams', label_zh: '团队AI工具整合', label_no: 'Implementere KI-verktøy i team', label_sv: 'Implementera AI-verktyg i team',
             pitch_fr: 'L\'IA n\'est pas un outil individuel — c\'est un changement de façon de travailler collectivement. Cette formation accompagne les managers dans le déploiement et l\'adoption des outils IA au sein de leurs équipes.',
             programme_fr: [
               'Cartographie des outils IA adaptés à votre contexte',
@@ -499,18 +508,21 @@ const FORMATIONS = {
 
   communication: {
     slug: 'communication',
-    label_fr: 'Communication', label_en: 'Communication',
+    label_fr: 'Communication', label_en: 'Communication', label_zh: '沟通技巧', label_no: 'Kommunikasjon', label_sv: 'Kommunikation',
     icon: '◎',
     desc_fr: 'Management de l\'humain, gestion de crise, techniques de vente, prise de parole — les compétences de communication qui font la différence.',
     desc_en: 'Human management, crisis communication, sales techniques, public speaking.',
+    desc_zh: '人员管理、危机沟通、销售技巧、公开演讲——让沟通真正发挥作用的核心能力。',
+    desc_no: 'Personalledelse, krisekommunikasjon, salgsteknikker, offentlig tale — kommunikasjonskompetansen som gjør en forskjell.',
+    desc_sv: 'Personalledning, krishantering, försäljningstekniker, offentligt tal — kommunikationskompetensen som gör skillnad.',
     sous_services: {
       core: {
         slug: 'core',
-        label_fr: 'Formations Communication', label_en: 'Communication Training',
+        label_fr: 'Formations Communication', label_en: 'Communication Training', label_zh: '沟通技巧培训', label_no: 'Kommunikasjonsopplæring', label_sv: 'Kommunikationsutbildning',
         modules: [
           {
             slug: 'management-humain',
-            label_fr: 'Management de l\'humain', label_en: 'Human Management',
+            label_fr: 'Management de l\'humain', label_en: 'Human Management', label_zh: '人员管理', label_no: 'Personalledelse', label_sv: 'Personalledning',
             pitch_fr: 'Le management, ça s\'apprend. Pas dans les livres — sur le terrain. Cette formation donne les outils concrets pour manager des humains dans des contextes réels : pression, conflit, motivation, feedback, recrutement.',
             programme_fr: [
               'Styles de management et quand les utiliser',
@@ -530,7 +542,7 @@ const FORMATIONS = {
           },
           {
             slug: 'gestion-de-crise',
-            label_fr: 'Gestion de crise & communication sous pression', label_en: 'Crisis Management & Communication',
+            label_fr: 'Gestion de crise & communication sous pression', label_en: 'Crisis Management & Communication', label_zh: '危机管理与压力沟通', label_no: 'Krisehåndtering & kommunikasjon under press', label_sv: 'Krishantering & kommunikation under press',
             pitch_fr: 'La crise révèle les organisations. Celles qui ont préparé leur communication survivent. Les autres subissent. Cette formation prépare les décideurs à communiquer sous pression — en interne, en externe, face aux médias.',
             programme_fr: [
               'Anatomie d\'une crise de communication',
@@ -550,7 +562,7 @@ const FORMATIONS = {
           },
           {
             slug: 'techniques-de-vente',
-            label_fr: 'Techniques de vente & persuasion', label_en: 'Sales & Persuasion',
+            label_fr: 'Techniques de vente & persuasion', label_en: 'Sales & Persuasion', label_zh: '销售与说服技巧', label_no: 'Salgsteknikker & overtalelse', label_sv: 'Försäljningstekniker & övertalning',
             pitch_fr: 'Vendre, c\'est convaincre. Convaincre, ça s\'apprend. Cette formation couvre les techniques de vente consultative, de persuasion éthique et de closing pour les commerciaux B2B et les dirigeants qui vendent leur vision.',
             programme_fr: [
               'Psychologie de la décision d\'achat',
@@ -570,7 +582,7 @@ const FORMATIONS = {
           },
           {
             slug: 'prise-de-parole',
-            label_fr: 'Prise de parole en public', label_en: 'Public Speaking',
+            label_fr: 'Prise de parole en public', label_en: 'Public Speaking', label_zh: '公开演讲', label_no: 'Offentlig tale', label_sv: 'Offentligt tal',
             pitch_fr: 'Parler en public est la compétence la plus sous-estimée du monde professionnel. Et la plus déterminante. Cette formation transforme les gens qui ont peur du micro en orateurs qui commandent l\'attention.',
             programme_fr: [
               'Gestion du trac et du stress de scène',
@@ -596,18 +608,21 @@ const FORMATIONS = {
 
   veille: {
     slug: 'veille',
-    label_fr: 'Veille des marchés', label_en: 'Market Intelligence',
+    label_fr: 'Veille des marchés', label_en: 'Market Intelligence', label_zh: '市场情报', label_no: 'Markedsovervåking', label_sv: 'Marknadsbevakning',
     icon: '◈',
     desc_fr: 'Veille stratégique, analyse concurrentielle, intelligence sectorielle — les méthodes pour ne plus naviguer à l\'aveugle.',
     desc_en: 'Strategic monitoring, competitive analysis, sectoral intelligence.',
+    desc_zh: '战略监测、竞争分析、行业情报——不再盲目导航的方法。',
+    desc_no: 'Strategisk overvåking, konkurranseanalyse, sektoriell etterretning — metodene for å slutte å navigere i blinde.',
+    desc_sv: 'Strategisk bevakning, konkurrensanalys, sektoriell underrättelse — metoderna för att sluta navigera i blindo.',
     sous_services: {
       core: {
         slug: 'core',
-        label_fr: 'Formations Veille & Intelligence', label_en: 'Intelligence Training',
+        label_fr: 'Formations Veille & Intelligence', label_en: 'Intelligence Training', label_zh: '情报与监测培训', label_no: 'Etterretnings- og overvåkingsopplæring', label_sv: 'Underrättelse- och bevakningsutbildning',
         modules: [
           {
             slug: 'veille-strategique',
-            label_fr: 'Mettre en place une veille stratégique', label_en: 'Setting Up Strategic Monitoring',
+            label_fr: 'Mettre en place une veille stratégique', label_en: 'Setting Up Strategic Monitoring', label_zh: '建立战略监测体系', label_no: 'Sette opp strategisk overvåking', label_sv: 'Sätta upp strategisk bevakning',
             pitch_fr: 'Ne pas savoir ce que fait votre marché, c\'est naviguer à l\'aveugle. Cette formation donne les outils et la méthode pour construire une veille stratégique efficace, automatisée et actionnnable.',
             programme_fr: [
               'Définir ses axes de veille prioritaires',
@@ -627,7 +642,7 @@ const FORMATIONS = {
           },
           {
             slug: 'analyse-concurrentielle',
-            label_fr: 'Analyse concurrentielle & cartographie des acteurs', label_en: 'Competitive Analysis & Actor Mapping',
+            label_fr: 'Analyse concurrentielle & cartographie des acteurs', label_en: 'Competitive Analysis & Actor Mapping', label_zh: '竞争分析与参与者映射', label_no: 'Konkurranseanalyse & aktørkartlegging', label_sv: 'Konkurrensanalys & aktörskartläggning',
             pitch_fr: 'Connaître ses concurrents mieux qu\'ils ne se connaissent eux-mêmes — c\'est un avantage décisif. Cette formation donne la méthode pour cartographier un marché, identifier les acteurs clés et positionner son offre stratégiquement.',
             programme_fr: [
               'Méthodologie d\'analyse concurrentielle',
@@ -647,7 +662,7 @@ const FORMATIONS = {
           },
           {
             slug: 'intelligence-sectorielle',
-            label_fr: 'Intelligence sectorielle appliquée', label_en: 'Applied Sectoral Intelligence',
+            label_fr: 'Intelligence sectorielle appliquée', label_en: 'Applied Sectoral Intelligence', label_zh: '应用行业情报', label_no: 'Anvendt sektoriell etterretning', label_sv: 'Tillämpad sektoriell underrättelse',
             pitch_fr: 'Comprendre un secteur en profondeur — ses acteurs, ses dynamiques, ses codes, ses réseaux — c\'est la condition pour y intervenir avec efficacité.',
             programme_fr: [
               'Anatomie d\'un secteur d\'activité',
@@ -678,8 +693,12 @@ const FORMATIONS = {
 const CONSULTING = [
   {
     slug: 'interculturel',
-    label_fr: 'Conseil interculturel', label_en: 'Intercultural Consulting',
+    label_fr: 'Conseil interculturel', label_en: 'Intercultural Consulting', label_zh: '跨文化咨询', label_no: 'Interkulturell rådgivning', label_sv: 'Interkulturell rådgivning',
     pitch_fr: 'Les organisations ratent des marchés, des partenariats et des recrutements à cause de malentendus culturels évitables. J\'interviens pour identifier ces frictions et les éliminer avant qu\'elles coûtent.',
+    pitch_en: 'Organisations miss markets, partnerships and hires due to avoidable cultural misunderstandings. I identify these frictions and eliminate them before they cost.',
+    pitch_zh: '组织因可避免的文化误解而错失市场、合作伙伴和招聘机会。我介入以识别这些摩擦并在其造成损失之前消除它们。',
+    pitch_no: 'Organisasjoner mister markeder, partnerskap og rekrutteringer på grunn av unngåelige kulturelle misforståelser. Jeg griper inn for å identifisere disse friksjonene og eliminere dem før de koster penger.',
+    pitch_sv: 'Organisationer missar marknader, partnerskap och rekryteringar på grund av undvikbara kulturella missförstånd. Jag ingriper för att identifiera dessa friktioner och eliminera dem innan de kostar pengar.',
     perimetre_fr: [
       'Audit culturel de l\'organisation',
       'Formation des équipes aux codes culturels des marchés cibles',
@@ -692,8 +711,12 @@ const CONSULTING = [
   },
   {
     slug: 'ingenierie-ped',
-    label_fr: 'Ingénierie pédagogique', label_en: 'Pedagogical Engineering',
+    label_fr: 'Ingénierie pédagogique', label_en: 'Pedagogical Engineering', label_zh: '教学工程', label_no: 'Pedagogisk ingeniørvirksomhet', label_sv: 'Pedagogisk ingenjörskonst',
     pitch_fr: 'Vous avez un besoin de formation. Vous ne savez pas comment le transformer en programme opérationnel, certifiable et finançable. C\'est exactement ce que je fais.',
+    pitch_en: 'You have a training need. You don\'t know how to turn it into an operational, certifiable and fundable programme. That\'s exactly what I do.',
+    pitch_zh: '您有培训需求。您不知道如何将其转化为可操作、可认证和可融资的项目。这正是我所做的。',
+    pitch_no: 'Du har et opplæringsbehov. Du vet ikke hvordan du skal omsette det til et operasjonelt, sertifiserbart og finansierbart program. Det er nøyaktig det jeg gjør.',
+    pitch_sv: 'Du har ett utbildningsbehov. Du vet inte hur du ska omvandla det till ett operationellt, certifierbart och finansierbart program. Det är precis vad jag gör.',
     perimetre_fr: [
       'Analyse des besoins et audit des compétences',
       'Conception du référentiel pédagogique',
@@ -707,8 +730,12 @@ const CONSULTING = [
   },
   {
     slug: 'internationalisation',
-    label_fr: 'Conseil en internationalisation', label_en: 'Internationalisation Advisory',
+    label_fr: 'Conseil en internationalisation', label_en: 'Internationalisation Advisory', label_zh: '国际化咨询', label_no: 'Internasjonaliseringsrådgivning', label_sv: 'Internationaliseringsrådgivning',
     pitch_fr: 'Entrer sur un marché étranger sans en comprendre les codes, c\'est brûler des ressources. J\'accompagne les organisations dans leur expansion internationale — culturellement, linguistiquement, stratégiquement.',
+    pitch_en: 'Entering a foreign market without understanding its codes is burning resources. I support organisations in their international expansion — culturally, linguistically, strategically.',
+    pitch_zh: '在不了解外国市场规则的情况下进入该市场，就是在燃烧资源。我从文化、语言和战略角度支持组织进行国际扩张。',
+    pitch_no: 'Å gå inn i et utenlandsk marked uten å forstå kodene er å brenne ressurser. Jeg følger organisasjoner i deres internasjonale ekspansjon — kulturelt, språklig, strategisk.',
+    pitch_sv: 'Att gå in på en utländsk marknad utan att förstå koderna är att bränna resurser. Jag stödjer organisationer i deras internationella expansion — kulturellt, språkligt, strategiskt.',
     perimetre_fr: [
       'Analyse du marché cible (culturelle, linguistique, concurrentielle)',
       'Adaptation du discours et des outils commerciaux',
@@ -722,8 +749,12 @@ const CONSULTING = [
   },
   {
     slug: 'campagne-politique',
-    label_fr: 'Conseil en campagne politique', label_en: 'Political Campaign Advisory',
+    label_fr: 'Conseil en campagne politique', label_en: 'Political Campaign Advisory', label_zh: '政治竞选咨询', label_no: 'Politisk kampanjerådgivning', label_sv: 'Politisk kampanjrådgivning',
     pitch_fr: 'La communication politique est une discipline à part entière. Message, terrain, médias, adversaires, imprévus — chaque élément doit être anticipé et maîtrisé. J\'interviens en amont et pendant les campagnes.',
+    pitch_en: 'Political communication is a discipline in its own right. Message, field, media, opponents, unexpected events — every element must be anticipated and mastered. I intervene before and during campaigns.',
+    pitch_zh: '政治传播是一门独立的学科。信息、现场、媒体、对手、意外——每个元素都必须预测和掌控。我在竞选前期和期间介入。',
+    pitch_no: 'Politisk kommunikasjon er en disiplin i seg selv. Budskap, felt, medier, motstandere, uforutsette hendelser — hvert element må forutses og mestres. Jeg griper inn i forkant og under kampanjer.',
+    pitch_sv: 'Politisk kommunikation är en disciplin i sig. Budskap, fält, media, motståndare, oförutsedda händelser — varje element måste förutses och behärskas. Jag ingriper inför och under kampanjer.',
     perimetre_fr: [
       'Positionnement et plateforme de campagne',
       'Stratégie de communication (médias, terrain, réseaux sociaux)',
@@ -737,8 +768,12 @@ const CONSULTING = [
   },
   {
     slug: 'intelligence-eco',
-    label_fr: 'Intelligence économique & veille stratégique', label_en: 'Economic Intelligence & Strategic Monitoring',
+    label_fr: 'Intelligence économique & veille stratégique', label_en: 'Economic Intelligence & Strategic Monitoring', label_zh: '经济情报与战略监测', label_no: 'Etterretning & strategisk overvåking', label_sv: 'Ekonomisk underrättelse & strategisk bevakning',
     pitch_fr: 'L\'information est une arme. Ceux qui la maîtrisent décident. Ceux qui ne la maîtrisent pas subissent. J\'aide les organisations à construire leur dispositif de veille et d\'intelligence économique.',
+    pitch_en: 'Information is a weapon. Those who master it decide. Those who don\'t are subject to it. I help organisations build their intelligence and monitoring system.',
+    pitch_zh: '信息是武器。掌握它的人做决策。不掌握它的人被动承受。我帮助组织建立情报和经济信息监测体系。',
+    pitch_no: 'Informasjon er et våpen. De som behersker det bestemmer. De som ikke behersker det, blir styrt. Jeg hjelper organisasjoner å bygge sitt overvåkings- og etterretningssystem.',
+    pitch_sv: 'Information är ett vapen. De som bemästrar den bestämmer. De som inte bemästrar den är utlämnade. Jag hjälper organisationer att bygga sitt bevaknings- och underrättelsesystem.',
     perimetre_fr: [
       'Audit du dispositif de veille existant',
       'Construction d\'un système de veille stratégique',
@@ -751,8 +786,12 @@ const CONSULTING = [
   },
   {
     slug: 'guerre-eco',
-    label_fr: 'Guerre économique & influence', label_en: 'Economic Warfare & Influence',
+    label_fr: 'Guerre économique & influence', label_en: 'Economic Warfare & Influence', label_zh: '经济战与影响力', label_no: 'Økonomisk krigføring & påvirkning', label_sv: 'Ekonomisk krigföring & påverkan',
     pitch_fr: 'La guerre économique est réelle, permanente et souvent invisible. Conquête de marchés, déstabilisation de concurrents, influence des décideurs, guerre de l\'information — j\'aide les organisations à comprendre ces dynamiques et à s\'y positionner.',
+    pitch_en: 'Economic warfare is real, permanent and often invisible. Market conquest, competitor destabilisation, influencing decision-makers, information warfare — I help organisations understand these dynamics and position themselves.',
+    pitch_zh: '经济战是真实的、持续的，而且往往是无形的。市场征服、竞争对手的不稳定化、影响决策者、信息战——我帮助组织理解这些动态并进行自我定位。',
+    pitch_no: 'Økonomisk krigføring er reell, permanent og ofte usynlig. Markedsinntrengning, destabilisering av konkurrenter, påvirkning av beslutningstakere, informasjonskrig — jeg hjelper organisasjoner å forstå disse dynamikkene og posisjonere seg.',
+    pitch_sv: 'Ekonomisk krigföring är verklig, permanent och ofta osynlig. Marknadserövring, destabilisering av konkurrenter, påverkan av beslutsfattare, informationskrig — jag hjälper organisationer att förstå dessa dynamiker och positionera sig.',
     perimetre_fr: [
       'Cartographie des menaces économiques et informationnelles',
       'Stratégie d\'influence et de positionnement',
@@ -765,8 +804,12 @@ const CONSULTING = [
   },
   {
     slug: 'personal-branding',
-    label_fr: 'Personal branding dirigeants & experts', label_en: 'Executive & Expert Personal Branding',
+    label_fr: 'Personal branding dirigeants & experts', label_en: 'Executive & Expert Personal Branding', label_zh: '高管与专家个人品牌', label_no: 'Personal branding for ledere og eksperter', label_sv: 'Personal branding för ledare och experter',
     pitch_fr: 'Votre réputation vous précède — ou elle vous manque. Pour les dirigeants, consultants et experts qui veulent construire une présence qui travaille pour eux même quand ils ne sont pas dans la pièce.',
+    pitch_en: 'Your reputation precedes you — or it\'s absent. For executives, consultants and experts who want to build a presence that works for them even when they\'re not in the room.',
+    pitch_zh: '您的声誉先于您而至——或者缺席。对于想要建立即使自己不在场时也能为自己工作的影响力的高管、顾问和专家而言。',
+    pitch_no: 'Omdømmet ditt går foran deg — eller mangler. For ledere, konsulenter og eksperter som ønsker å bygge en tilstedeværelse som arbeider for dem selv når de ikke er i rommet.',
+    pitch_sv: 'Ditt rykte föregår dig — eller saknas. För ledare, konsulter och experter som vill bygga en närvaro som arbetar för dem även när de inte är i rummet.',
     perimetre_fr: [
       'Audit de présence et de réputation actuelle',
       'Positionnement éditorial et ligne de communication',
@@ -780,8 +823,12 @@ const CONSULTING = [
   },
   {
     slug: 'communication-crise',
-    label_fr: 'Communication de crise', label_en: 'Crisis Communication',
+    label_fr: 'Communication de crise', label_en: 'Crisis Communication', label_zh: '危机传播', label_no: 'Krisekommunikasjon', label_sv: 'Krishanteringskommunikation',
     pitch_fr: 'Quand la crise arrive, il est trop tard pour improviser. J\'interviens en amont pour préparer les protocoles et pendant la crise pour structurer la communication et protéger la réputation.',
+    pitch_en: 'When the crisis comes, it\'s too late to improvise. I intervene in advance to prepare protocols and during the crisis to structure communication and protect reputation.',
+    pitch_zh: '当危机来临时，再去即兴应对已经太晚了。我提前介入以准备协议，并在危机期间帮助构建沟通和保护声誉。',
+    pitch_no: 'Når krisen kommer, er det for sent å improvisere. Jeg griper inn på forhånd for å forberede protokollene og under krisen for å strukturere kommunikasjonen og beskytte omdømmet.',
+    pitch_sv: 'När krisen kommer är det för sent att improvisera. Jag ingriper i förväg för att förbereda protokollen och under krisen för att strukturera kommunikationen och skydda ryktet.',
     perimetre_fr: [
       'Audit de vulnérabilité communicationnelle',
       'Élaboration du plan de communication de crise',
@@ -795,8 +842,12 @@ const CONSULTING = [
   },
   {
     slug: 'dev-commercial',
-    label_fr: 'Développement commercial international', label_en: 'International Business Development',
+    label_fr: 'Développement commercial international', label_en: 'International Business Development', label_zh: '国际商业发展', label_no: 'Internasjonal forretningsutvikling', label_sv: 'Internationell affärsutveckling',
     pitch_fr: 'Conquérir un marché étranger demande une approche commerciale adaptée à ses codes. J\'accompagne les équipes commerciales dans leur déploiement sur des marchés internationaux — méthode, outils, culture.',
+    pitch_en: 'Conquering a foreign market requires a commercial approach adapted to its codes. I support sales teams in their deployment on international markets — method, tools, culture.',
+    pitch_zh: '在国际市场开拓业务需要针对其规则调整的商业方法。我陪伴商业团队在国际市场上展开行动——方法、工具、文化。',
+    pitch_no: 'Å erobre et utenlandsk marked krever en salgstilnærming tilpasset dets koder. Jeg følger salgsteam i utplasseringen på internasjonale markeder — metode, verktøy, kultur.',
+    pitch_sv: 'Att erövra en utländsk marknad kräver ett affärsmässigt tillvägagångssätt anpassat till dess koder. Jag följer säljteam i deras utplacering på internationella marknader — metod, verktyg, kultur.',
     perimetre_fr: [
       'Adaptation de la méthode commerciale au marché cible',
       'Formation aux codes culturels de la vente dans le pays cible',
@@ -809,8 +860,12 @@ const CONSULTING = [
   },
   {
     slug: 'audit-presence',
-    label_fr: 'Audit de présence internationale', label_en: 'International Presence Audit',
+    label_fr: 'Audit de présence internationale', label_en: 'International Presence Audit', label_zh: '国际存在审计', label_no: 'Revisjon av internasjonal tilstedeværelse', label_sv: 'Revision av internationell närvaro',
     pitch_fr: 'Vous êtes présent à l\'international — mais est-ce que votre présence est cohérente, crédible et efficace ? J\'audite votre positionnement international et livre un plan d\'action concret.',
+    pitch_en: 'You are internationally present — but is your presence consistent, credible and effective? I audit your international positioning and deliver a concrete action plan.',
+    pitch_zh: '您在国际上有业务——但您的存在是否一致、可信和有效？我审计您的国际定位并提供具体行动计划。',
+    pitch_no: 'Du er tilstede internasjonalt — men er tilstedeværelsen din konsistent, troverdig og effektiv? Jeg reviderer din internasjonale posisjonering og leverer en konkret handlingsplan.',
+    pitch_sv: 'Du är internationellt närvarande — men är din närvaro konsekvent, trovärdig och effektiv? Jag reviderar din internationella positionering och levererar en konkret handlingsplan.',
     perimetre_fr: [
       'Audit de la communication internationale (site, réseaux, supports)',
       'Analyse de la cohérence du discours selon les marchés',

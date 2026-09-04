@@ -89,6 +89,10 @@ const T = {
   'lbl.about':      {fr:'À propos',                   en:'About',                     zh:'关于',         no:'Om',                        sv:'Om'},
   'lbl.method':     {fr:'Méthode propriétaire — 5 piliers', en:'Proprietary method — 5 pillars', zh:'专有方法 — 5大支柱', no:'Proprietær metode — 5 pilarer', sv:'Proprietär metod — 5 pelare'},
   'lbl.certs':      {fr:'Qualifications & certifications', en:'Qualifications & certifications', zh:'资质与认证', no:'Kvalifikasjoner og sertifikater', sv:'Kvalifikationer och certifikat'},
+  'certs.intro':   {fr:'Chaque diplôme et chaque certification ci-dessous est téléchargeable en PDF — pièce justificative à l\'appui.', en:'Every degree and certificate below is downloadable as a PDF — supporting document included.', zh:'以下每一份学历与证书均可下载 PDF 原件。', no:'Hvert vitnemål og sertifikat nedenfor kan lastes ned som PDF — med dokumentasjon.', sv:'Varje examen och certifikat nedan kan laddas ner som PDF — med underlag.'},
+  'certs.dl':      {fr:'Télécharger le PDF',   en:'Download PDF',      zh:'下载 PDF',   no:'Last ned PDF',   sv:'Ladda ner PDF'},
+  'certs.cv':      {fr:'Télécharger mon CV',   en:'Download my CV',    zh:'下载我的简历', no:'Last ned CV-en min', sv:'Ladda ner mitt CV'},
+  'certs.cv_sub':  {fr:'PDF · parcours complet, références et missions', en:'PDF · full track record, references and assignments', zh:'PDF · 完整履历、推荐与项目', no:'PDF · fullstendig bakgrunn, referanser og oppdrag', sv:'PDF · fullständig bakgrund, referenser och uppdrag'},
   'lbl.partners':   {fr:'Partenaires institutionnels', en:'Institutional partners',   zh:'合作院校',     no:'Institusjonelle partnere',  sv:'Institutionella partners'},
   'lbl.reviews':    {fr:'Ce qu\'ils en disent',        en:'What they say',             zh:'他们的评价',   no:'Hva de sier',               sv:'Vad de säger'},
   'lbl.blog':       {fr:'Articles & réflexions',       en:'Articles & insights',       zh:'文章与思考',   no:'Artikler og refleksjoner',  sv:'Artiklar och reflektioner'},
@@ -541,6 +545,13 @@ function renderHome(app){
     <div class="container">
       <span class="sec-label">${t('lbl.certs')}</span>
       <h2>${t('h2.certs')}</h2>
+      <div class="certs-head">
+        <p class="certs-intro">${t('certs.intro')}</p>
+        <a class="cv-btn" href="CERTIF/CV-Marcus-Detrez.pdf" download>
+          <span class="cv-btn-txt">${t('certs.cv')}<em>${t('certs.cv_sub')}</em></span>
+          ${DL_ICON}
+        </a>
+      </div>
       <div class="certs-tabs tabs">
         <button class="tab-btn active" data-tab="ct-langues" data-fr>Langues</button><button class="tab-btn active" data-tab="ct-langues" data-en>Languages</button><button class="tab-btn active" data-tab="ct-langues" data-zh>语言</button><button class="tab-btn active" data-tab="ct-langues" data-no>Språk</button><button class="tab-btn active" data-tab="ct-langues" data-sv>Språk</button>
         <button class="tab-btn" data-tab="ct-academique" data-fr>Académique</button><button class="tab-btn" data-tab="ct-academique" data-en>Academic</button><button class="tab-btn" data-tab="ct-academique" data-zh>学术</button><button class="tab-btn" data-tab="ct-academique" data-no>Akademisk</button><button class="tab-btn" data-tab="ct-academique" data-sv>Akademisk</button>
@@ -617,14 +628,19 @@ function renderHome(app){
   initTabs();
 }
 
+const DL_ICON = '<svg class="dl-icon" viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="square" aria-hidden="true"><path d="M12 3v12M7 11l5 5 5-5M4 20h16"/></svg>';
+
 function certCardHTML(c){
-  return `<div class="cert-card">
-    <span class="cert-year">${c.annee}</span>
+  return `<a class="cert-card" href="CERTIF/${c.pdf}" download title="${t('certs.dl')} — ${c.nom}">
+    <div class="cert-head">
+      <span class="cert-level ${c.badge}">${c.niveau}</span>
+      <span class="cert-year">${c.annee}</span>
+    </div>
     <div class="cert-name">${c.nom}</div>
     <div class="cert-sub">${c.sub}</div>
-    <span class="cert-level ${c.badge}">${c.niveau}</span>
     <div class="cert-desc">${c.desc}</div>
-  </div>`;
+    <span class="cert-dl">${DL_ICON}${t('certs.dl')}</span>
+  </a>`;
 }
 
 /* ================================================================

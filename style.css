@@ -252,20 +252,31 @@ p{color:var(--ink2);line-height:1.75}
 .filter-btn:hover,.filter-btn.active{border-color:var(--red);color:var(--red);background:var(--red-dim)}
 
 /* ——— CERTIFICATIONS ——— */
-.certs-tabs{display:flex;border:1px solid var(--border);border-radius:2px;overflow:hidden;width:fit-content;margin-bottom:3rem}
+.certs-head{display:flex;align-items:center;justify-content:space-between;gap:2rem;flex-wrap:wrap;margin:-1rem 0 2.5rem}
+.certs-intro{font-size:1rem;color:var(--ink2);line-height:1.65;max-width:520px}
+.cv-btn{display:inline-flex;align-items:center;gap:1rem;background:var(--bg3);border:1px solid var(--border);border-left:3px solid var(--red);padding:1rem 1.4rem;transition:all .2s;flex-shrink:0}
+.cv-btn:hover{background:var(--red-dim);border-color:var(--red)}
+.cv-btn-txt{display:flex;flex-direction:column;gap:.2rem;font-size:.82rem;font-weight:600;letter-spacing:.08em;text-transform:uppercase;color:var(--ink)}
+.cv-btn-txt em{font-style:normal;font-size:.72rem;font-weight:400;letter-spacing:.02em;text-transform:none;color:#8a8a8a}
+.cv-btn .dl-icon{color:var(--red);flex-shrink:0}
+
+.certs-tabs{display:flex;flex-wrap:wrap;border:1px solid var(--border);border-radius:2px;overflow:hidden;width:fit-content;max-width:100%;margin-bottom:2rem}
 .certs-tabs .tab-btn{padding:.55rem 1.8rem}
-.certs-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:2px}
-.cert-card{background:var(--bg3);border:1px solid var(--border);padding:1.75rem 1.5rem;transition:all .2s;display:flex;flex-direction:column;gap:.35rem;position:relative}
+.certs-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(320px,1fr));gap:2px}
+.cert-card{background:var(--bg3);border:1px solid var(--border);padding:1.5rem;transition:all .2s;display:flex;flex-direction:column;gap:.55rem}
 .cert-card:hover{background:var(--red-dim);border-color:var(--red)}
-.cert-card:hover .cert-name,.cert-card:hover .cert-sub,.cert-card:hover .cert-desc{color:var(--ink)}
-.cert-name{font-family:var(--display);font-size:1.35rem;letter-spacing:.04em;color:var(--ink)}
-.cert-sub{font-size:.75rem;font-weight:600;letter-spacing:.08em;text-transform:uppercase;color:var(--ink3)}
-.cert-level{display:inline-block;font-size:.72rem;font-weight:600;letter-spacing:.08em;text-transform:uppercase;padding:.2rem .65rem;border-radius:100px;border:1px solid var(--border);color:var(--ink3);width:fit-content;margin-top:.25rem}
+.cert-card:hover .cert-sub,.cert-card:hover .cert-desc,.cert-card:hover .cert-year{color:var(--ink2)}
+.cert-card:hover .cert-dl{color:var(--red);opacity:1}
+.cert-head{display:flex;align-items:center;justify-content:space-between;gap:.75rem}
+.cert-name{font-size:1rem;font-weight:600;line-height:1.4;color:var(--ink)}
+.cert-sub{font-size:.74rem;font-weight:600;letter-spacing:.06em;text-transform:uppercase;color:#8a8a8a;line-height:1.45}
+.cert-level{display:inline-block;font-size:.7rem;font-weight:600;letter-spacing:.08em;text-transform:uppercase;padding:.2rem .65rem;border-radius:100px;border:1px solid var(--border);color:var(--ink2);width:fit-content}
 .cert-level.hi{border-color:var(--red);color:var(--red)}
 .cert-level.mid{border-color:#ff8800;color:#ff8800}
-.cert-level.lo{border-color:#5577ff;color:#5577ff}
-.cert-desc{font-size:.84rem;color:var(--ink2);line-height:1.5;margin-top:auto}
-.cert-year{position:absolute;top:1rem;right:1rem;font-size:.68rem;font-weight:600;color:var(--ink3)}
+.cert-level.lo{border-color:#7a95ff;color:#7a95ff}
+.cert-desc{font-size:.86rem;color:var(--ink2);line-height:1.55;margin-bottom:.9rem}
+.cert-year{font-size:.72rem;font-weight:600;color:#8a8a8a;flex-shrink:0}
+.cert-dl{display:flex;align-items:center;gap:.5rem;margin-top:auto;padding-top:.9rem;border-top:1px solid var(--border);font-size:.7rem;font-weight:600;letter-spacing:.1em;text-transform:uppercase;color:#8a8a8a;opacity:.85;transition:all .2s}
 
 /* ——— PARTNERS ——— */
 .schools-grid{display:grid;grid-template-columns:repeat(4,1fr);border:1px solid var(--border)}
@@ -480,7 +491,7 @@ body.sv [data-no]{display:none}
   .blog-grid-full{grid-template-columns:1fr 1fr}
   .contact-grid{grid-template-columns:1fr}
   .contact-left{border-right:none;border-bottom:1px solid var(--border)}
-  .certs-grid{grid-template-columns:1fr 1fr}
+  .certs-head{flex-direction:column;align-items:stretch}
   .form-row{grid-template-columns:1fr}
   .related-grid{grid-template-columns:1fr}
   .deroulement{flex-direction:column}
@@ -490,7 +501,6 @@ body.sv [data-no]{display:none}
 @media(max-width:480px){
   .volets-grid{grid-template-columns:1fr}
   .blog-grid-full{grid-template-columns:1fr}
-  .certs-grid{grid-template-columns:1fr}
   .schools-grid{grid-template-columns:1fr}
   .hero-stats{gap:1.5rem}
   .modules-grid{grid-template-columns:1fr}

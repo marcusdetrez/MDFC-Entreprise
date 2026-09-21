@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<!--
+  Source du CV. Le PDF servi par le site (bouton « Télécharger mon CV ») se régénère depuis ce dossier avec :
+
+  "/Applications/Google Chrome.app/Contents/MacOS/Google Chrome" --headless --no-pdf-header-footer \
+    --print-to-pdf=../CERTIF/CV-Marcus-Detrez.pdf cv.html
+-->
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="robots" content="noindex">
+<title>CV — Marcus Détrez</title>
+<style>
+  @page { size: A4; margin: 12mm 12.7mm; }
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  body { font: 8.5pt/1.22 Arial, Helvetica, sans-serif; color: #1a1a1a; -webkit-print-color-adjust: exact; print-color-adjust: exact; }
+
+  header { display: flex; align-items: center; gap: 4pt; margin-bottom: 14pt; }
+  header img { width: 81pt; height: 107pt; object-fit: cover; }
+  .bandeau { flex: 1; background: #2d2d2d; color: #fff; padding: 26pt 16pt 22pt; }
+  .bandeau h1 { font-size: 28pt; line-height: 1.1; margin-bottom: 6pt; }
+  .bandeau .l1 { font-size: 10pt; color: #e6e6e6; }
+  .bandeau .l2 { font-size: 8pt; color: #9a9a9a; margin: 3pt 0 6pt; }
+  .bandeau .l3 { font-size: 7.5pt; color: #d5d5d5; }
+  .bandeau .l3 span { margin-right: 6pt; }
+  .bandeau i { font-style: normal; margin: 0 4pt; }
+
+  h2 { font-size: 10.5pt; text-transform: uppercase; border-bottom: 1.3pt solid #222; padding-bottom: 2pt; margin: 10pt 0 5pt; break-after: avoid; }
+  .cols { display: grid; grid-template-columns: 1fr 1fr; column-gap: 18pt; }
+  .exp { margin-bottom: 4pt; break-inside: avoid; }
+  .exp h3 { font-size: 8.5pt; font-weight: normal; color: #333; }
+  .exp h3 b { font-size: 9.5pt; color: #111; }
+  .exp h3 i { font-style: normal; margin: 0 3pt; }
+  .exp h3 time { font-size: 7.5pt; color: #999; }
+  ul { list-style: none; padding-left: 22pt; margin-top: 1pt; }
+  li { position: relative; }
+  li::before { content: "-"; position: absolute; left: -11pt; }
+  h4 { font-size: 8.5pt; margin-bottom: 1pt; }
+
+  .cartes { display: grid; grid-template-columns: repeat(3, 1fr); border: .5pt solid #ccc; background: #f0f0f0; }
+  .cartes > div { padding: 5pt 6pt 6pt; border: .5pt solid #ccc; font-size: 7.8pt; color: #333; break-inside: avoid; }
+  .cartes b { display: block; font-size: 8.5pt; color: #111; margin-bottom: 1pt; }
+  .cartes em { display: block; font-size: 8pt; color: #222; margin-bottom: 1pt; }
+  .cartes p { font-size: 7.3pt; line-height: 1.15; color: #555; }
+
+  .page2 { break-before: page; }
+  .page2 h2:first-child { margin-top: 0; }
+  table { width: 100%; border-collapse: collapse; table-layout: fixed; }
+  th { text-align: left; padding: 4pt 6pt; border-bottom: .5pt solid #bbb; }
+  td { padding: 3.5pt 6pt; font-size: 7.5pt; vertical-align: top; }
+  tr.cert td:nth-child(1) { background: #2d2d2d; color: #fff; font-weight: bold; font-size: 8.5pt; }
+  tr.cert td:nth-child(2) { background: #f0f0f0; font-weight: bold; font-size: 8pt; }
+  tr.titre td { font-weight: bold; color: #555; padding: 8pt 0 1pt; }
+  tr.actif td:nth-child(1) { background: #f0f0f0; font-weight: bold; font-size: 8.5pt; }
+  tr.actif td:nth-child(2) { font-style: italic; font-size: 8pt; }
+
+  footer { margin-top: 12pt; border-top: .5pt solid #bbb; padding-top: 7pt; text-align: center; font-size: 7pt; color: #999; }
+  footer i { font-style: normal; margin: 0 4pt; }
+</style>
+</head>
+<body>
+
+<header>
+  <img src="photo.jpg" alt="">
+  <div class="bandeau">
+    <h1>MARCUS DÉTREZ</h1>
+    <div class="l1">Entrepreneur <i>|</i> Formateur Intervenant <i>|</i> Polyglotte 7 langues certifiées</div>
+    <div class="l2">Commerce International <i>|</i> Interculturel <i>|</i> Géopolitique <i>|</i> Sales et Négociation</div>
+    <div class="l3"><span>marcus.detrez@gmail.com</span><span>+33 6 69 53 48 71</span><span>Marseille, France</span><span>NDA : 93132113413</span></div>
+  </div>
+</header>
+
+<h2>Profil</h2>
+<p>Entrepreneur multi-structures et formateur en grandes écoles depuis 2016, polyglotte certifié en 7 langues et pratiquant 12 langues au total. Je dirige Learny Society International, organisme de formation, et plusieurs entités actives sous MUS SASU ; j'ai une implantation opérationnelle en Chine (Chengdu, Sichuan), une expérience dans le secteur de l'armement, et j'ai accompagné plus de 3 500 apprenants avec ma méthode propriétaire 5 piliers. J'enseigne ce que je construis et ce que je vis : commerce international, géopolitique économique, vente et négociation, management interculturel, langues des affaires.</p>
+
+<h2>Expériences</h2>
+<div class="cols">
+  <div>
+    <div class="exp">
+      <h3><b>Président</b> <i>|</i> MUS SASU, Holding (SIREN 944 076 777) <time>depuis 2021</time></h3>
+      <ul>
+        <li>Structure faîtière coordonnant LSI, Formaccess et Stones &amp; Code</li>
+        <li>Investissements et prises de participation (Rosario Immo, Formaccess)</li>
+        <li>Missions d'internationalisation et coaching de dirigeants</li>
+      </ul>
+    </div>
+    <div class="exp">
+      <h3><b>Dirigeant</b> <i>|</i> Learny Society International (LSI), Organisme de formation (NDA 93132113413) <time>depuis sept. 2026</time></h3>
+      <ul>
+        <li>Cofondateur ; reprise de l'activité de formation de SNAKKAR sous le même numéro de déclaration d'activité</li>
+        <li>Think tank, investissement et médias éducatifs</li>
+        <li>JADHR : plateforme arabe de 365 leçons (pipeline Python/API)</li>
+        <li>LDAO8 : cours annuel de chinois, contenu et production visuelle</li>
+      </ul>
+    </div>
+    <div class="exp">
+      <h3><b>Directeur-Fondateur</b> <i>|</i> SNAKKAR, Formation en langues (NDA 93132113413) <time>avr. 2021 – sept. 2026</time></h3>
+      <ul>
+        <li>Méthode propriétaire 5 piliers, 3 500+ apprenants depuis 2016</li>
+        <li>Présentiel et distanciel dans 6 grandes écoles et universités</li>
+        <li>Modules : langues, interculturel, communication professionnelle</li>
+      </ul>
+    </div>
+  </div>
+  <div>
+    <div class="exp">
+      <h3><b>Entrepreneur et Cofondateur</b> <i>|</i> Chengdu (Sichuan), Chine <time>en cours</time></h3>
+      <ul>
+        <li>Montage d'une structure entrepreneuriale locale</li>
+        <li>Copropriétaire d'un café à Chengdu, ancrage terrain sur le marché asiatique</li>
+        <li>Interlocuteur direct en chinois mandarin pour les partenaires locaux</li>
+      </ul>
+    </div>
+    <div class="exp">
+      <h3><b>Intervenant Industrie Défense</b> <i>|</i> Arquus Panhard General Defense <time>antérieur</time></h3>
+      <ul>
+        <li>Enjeux industriels et logistiques du secteur armement</li>
+        <li>Environnement international B2B à forte exigence contractuelle</li>
+      </ul>
+    </div>
+    <div class="exp">
+      <h3><b>Associé</b> <i>|</i> Formaccess, Formation inclusion et handicap <time>depuis 2022</time></h3>
+      <ul>
+        <li>Obtention du NDA Pays de la Loire (DREETS, avril 2026)</li>
+        <li>Contenus pédagogiques pour entreprises et collectivités</li>
+      </ul>
+    </div>
+  </div>
+</div>
+
+<h2>Interventions en grandes écoles et universités</h2>
+<div class="cartes">
+  <div><b>Albert School, Marseille</b>Business Ethics, Géopolitique I et II<br>Sales et Négociation, Philosophie I<br>Cybersécurité et profils cyber</div>
+  <div><b>EM Normandie</b>Management interculturel des organisations<br>Anglais des affaires<br>Préparation et certification TOEIC</div>
+  <div><b>Mines Paris PSL</b>Business Ethics, Géopolitique<br>Sales et Négociation, Philosophie<br>Cybersécurité et profils cyber</div>
+  <div><b>CESI Aix-en-Provence</b>Interculturel et diversité en entreprise<br>Fonctionnement de l'entreprise<br>Anglais professionnel</div>
+  <div><b>Euridis Business School</b>Commerce international<br>Vente de produits tech et high-tech<br>Anglais, Chinois et Interculturel</div>
+  <div><b>ESAIP / Aix-Marseille Univ.</b>Anglais professionnel<br>Interculturel des organisations<br>Langues étrangères</div>
+</div>
+
+<h2>Engagement associatif et actions de bienfaisance</h2>
+<div class="cartes">
+  <div><b>L'Éveil des Héros</b><em>Partenaire et contributeur</em><p>Association de soutien aux familles proches aidantes de personnes en situation d'autisme et de répit familial. Production de 100 sujets vidéo et de conventions de partenariat avec Formaccess.</p></div>
+  <div><b>Artistiquement Tous</b><em>Co-créateur et conseil</em><p>Association promouvant l'art sous toutes ses formes d'exception pour tous les publics. Accompagnement stratégique, production documentaire et développement de la structure (Next.js, Supabase).</p></div>
+  <div><b>Echoes of the World</b><em>Vice-Président et Membre d'honneur</em><p>Association franco-chinoise d'amitié et de reconnaissance historique mutuelle, fondée autour des photographies de guerre de Roger-Pierre Laurens (618 clichés donnés au musée de Shanghai). Conférence Paris, avril 2026.</p></div>
+</div>
+
+<div class="page2">
+<h2>Langues : 7 langues certifiées, 12 pratiquées</h2>
+<table>
+  <tr><th>Langue</th><th>Niveau</th><th>Certification / Détail</th></tr>
+  <tr class="cert"><td>Français</td><td>Natif</td><td>Langue maternelle</td></tr>
+  <tr class="cert"><td>Anglais</td><td>Natif / TOEIC 930/990</td><td>ETS Global, octobre 2019</td></tr>
+  <tr class="cert"><td>Suédois</td><td>C2, Pipplet</td><td>Niveau courant certifié</td></tr>
+  <tr class="cert"><td>Allemand</td><td>B2+, Pipplet</td><td>Georg-August Univ. Göttingen</td></tr>
+  <tr class="cert"><td>Chinois (Mandarin)</td><td>B2, Pipplet / HSK 3 et 4</td><td>HSK3 : 283/300, HSK4 : 248/300</td></tr>
+  <tr class="cert"><td>Japonais</td><td>B1, JLPT N5</td><td>Japan Foundation</td></tr>
+  <tr class="cert"><td>Norvégien</td><td>Certifié</td><td>Høgskolen i Østfold, Halden</td></tr>
+  <tr class="titre"><td colspan="3">Langues en apprentissage actif</td></tr>
+  <tr class="actif"><td>Arabe</td><td>Apprentissage avancé</td><td>Fondateur de JADHR, plateforme de 365 leçons thématiques (pipeline Python/API)</td></tr>
+  <tr class="actif"><td>Espagnol</td><td>En cours</td><td>En évaluation</td></tr>
+  <tr class="actif"><td>Russe</td><td>En cours</td><td>En évaluation</td></tr>
+  <tr class="actif"><td>Persan</td><td>En cours</td><td>En évaluation</td></tr>
+  <tr class="actif"><td>Hébreu</td><td>En cours</td><td>En évaluation</td></tr>
+</table>
+
+<h2>Formation académique</h2>
+<div class="cols">
+  <div>
+    <div class="exp">
+      <h3><b>Master</b> <i>|</i> IAE de Poitiers <time>2021–2022</time></h3>
+      <ul><li>Management, Mention Assez Bien</li></ul>
+    </div>
+    <div class="exp">
+      <h3><b>Licence AEI, International Business</b> <i>|</i> UPEC, Høgskolen i Østfold (NO), Georg-August Univ. (DE) <time>2017–2021</time></h3>
+      <ul>
+        <li>Triple cursus international, Mention Bien</li>
+        <li>Séjours académiques en Norvège et en Allemagne</li>
+      </ul>
+    </div>
+  </div>
+  <div>
+    <div class="exp">
+      <h3><b>CORE International Business</b> <i>|</i> Harvard University (en ligne) <time>janv. – août 2023</time></h3>
+      <ul><li>Obtenu à 70 % de réussite</li></ul>
+    </div>
+    <div class="exp">
+      <h3><b>BAC ES, Mention Très Bien</b> <i>|</i> Lycée Francisque Sarcey, Dourdan <time>2013–2016</time></h3>
+      <ul><li>Section Euro Allemande</li></ul>
+    </div>
+  </div>
+</div>
+
+<h2>Certifications</h2>
+<div class="cols">
+  <ul>
+    <li>TOEIC 930/990, ETS Global, octobre 2019</li>
+    <li>HSK 3 : 283/300 &nbsp;|&nbsp; HSK 4 : 248/300 (Chinois)</li>
+    <li>JLPT N5, Japan Foundation (Japonais)</li>
+    <li>Suédois C2, Pipplet</li>
+  </ul>
+  <ul>
+    <li>Allemand B2+, Pipplet / Georg-August-Universität</li>
+    <li>Chinois B2, Pipplet</li>
+    <li>Norvégien certifié, Høgskolen i Østfold</li>
+    <li>NDA formation professionnelle : 93132113413</li>
+  </ul>
+</div>
+
+<h2>Compétences thématiques</h2>
+<div class="cols">
+  <div>
+    <h4>Business et Stratégie</h4>
+    <ul>
+      <li>Commerce international et marchés émergents (Asie, Europe du Nord)</li>
+      <li>Structuration juridique et financière d'entreprise (SAS, holding, filiales)</li>
+      <li>Sales, négociation B2B/B2C, techniques de closing</li>
+      <li>Géopolitique économique et analyse des risques-pays</li>
+      <li>Business Ethics, gouvernance et RSE</li>
+      <li>Entrepreneuriat : création, pilotage et développement multi-structures</li>
+      <li>Coaching de dirigeants et accompagnement à l'internationalisation</li>
+    </ul>
+  </div>
+  <div>
+    <h4>Digital et Création</h4>
+    <ul>
+      <li>Conception de parcours pédagogiques digitaux (e-learning, vidéo, carousels)</li>
+      <li>Développement web : HTML, CSS, JavaScript, Python, MySQL, PHP</li>
+      <li>Production de contenus à grande échelle (3 500+ apprenants)</li>
+      <li>Création de marques, identités visuelles et stratégie de contenu</li>
+      <li>Gestion de projets EdTech (pipeline API, batch generation, Playwright)</li>
+      <li>Plateformes multilingues : arabe (JADHR), chinois (LDAO8), anglais (ClashExam)</li>
+    </ul>
+  </div>
+</div>
+
+<h2>Approche pédagogique</h2>
+<p>J'ai commencé par l'enseignement avant de construire mes structures. Aujourd'hui, avec plusieurs entreprises actives, une implantation en Chine et des dizaines de projets en cours, je n'arrive pas à décrocher, et je ne cherche pas à le faire. La salle de cours est l'endroit où quelque chose d'irremplaçable se produit : le moment où une notion abstraite devient un réflexe, où l'international cesse d'être un concept pour devenir une intention. Ce que j'apporte aux étudiants, c'est une vision construite dans l'action, pas un curriculum récité.</p>
+
+<footer>MUS SASU, SIREN 944 076 777 <i>|</i> Learny Society International, NDA 93132113413 <i>|</i> marcus.detrez@gmail.com <i>|</i> +33 6 69 53 48 71</footer>
+</div>
+
+</body>
+</html>
